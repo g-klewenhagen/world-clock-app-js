@@ -1,37 +1,25 @@
 function updateTime() {
-  //Stuttgart
-  let stuttgartElement = document.querySelector("#stuttgart");
-  if (stuttgartElement) {
-    let stuttgartDateElement = stuttgartElement.querySelector(".date");
-    let stuttgartTimeElement = stuttgartElement.querySelector(".time");
-    let stuttgartTime = moment().tz("Europe/Berlin");
-    stuttgartDateElement.innerHTML =
-      stuttgartTime.format("dddd Do MMMM YYYY");
-    stuttgartTimeElement.innerHTML = stuttgartTime.format(
-      "h:mm:ss [<small>]A[</small>]"
-    );
-  }
-
   //Mexico City
   let mexicoCityElement = document.querySelector("#mexico-city");
   if (mexicoCityElement) {
     let mexicoCityDateElement = mexicoCityElement.querySelector(".date");
     let mexicoCityTimeElement = mexicoCityElement.querySelector(".time");
     let mexicoCityTime = moment().tz("America/Mexico_City");
-    mexicoCityDateElement.innerHTML = mexicoCityTime.format("dddd Do MMMM YYYY");
+    mexicoCityDateElement.innerHTML =
+      mexicoCityTime.format("dddd Do MMMM YYYY");
     mexicoCityTimeElement.innerHTML = mexicoCityTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
 
-  //Grenoble
-  let grenobleElement = document.querySelector("#grenoble");
-  if (grenobleElement) {
-    let grenobleDateElement = grenobleElement.querySelector(".date");
-    let grenobleTimeElement = grenobleElement.querySelector(".time");
-    let grenobleTime = moment().tz("Europe/Paris");
-    grenobleDateElement.innerHTML = grenobleTime.format("dddd Do MMMM YYYY");
-    grenobleTimeElement.innerHTML = grenobleTime.format(
+  //Paris
+  let parisElement = document.querySelector("#paris");
+  if (parisElement) {
+    let parisDateElement = parisElement.querySelector(".date");
+    let parisTimeElement = parisElement.querySelector(".time");
+    let parisTime = moment().tz("Europe/Paris");
+    parisDateElement.innerHTML = parisTime.format("dddd Do MMMM YYYY");
+    parisTimeElement.innerHTML = parisTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
